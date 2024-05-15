@@ -1,12 +1,16 @@
 import React from "react";
 import { name, city } from "../data/data.js";
+
  const divStyle={
-  color:'firebrick'
+  color:'firebrick',
+  display:'inline-block'
  };
-function Home({name, city}) {
+function Home() {
   // update the JSX being returned!
-  return <div id="#home">
-    <h1 style={divStyle}>{`${name}is a Web Developer from ${city}`}</h1>
+  return <div id="home">
+
+    <h1 style={divStyle}>{name} is a Web Developer from {city}</h1>
+
   </div>;
 }
 
